@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam Online✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>   
+</head>
+<body>
+    <div id="content" class="card">
+        <h1>Cek Khodam GRATIS!</h1>
+        <p id="text_input">Masukkan nama untuk melihat khodam anda</p>
+        <input type="text" id="nameInput" placeholder="Nama">
+        <div id="loading" class="loader" style="display: none;"></div>
+        <p id="loading-text" style="display: none;">Tunggu Sebentar...</p>
+        <button id="cekKhodamButton" onclick="cekKhodam()">Cek Khodam</button>
+        <div id="result">
+            <p id="resultNama">Khodam yang ada di dalam diri <a href="#" id="output"></a></p>
+            <h2 id="khodamName"></h2>
+            <p id="khodamMeaning"></p>
+            <button id="cekLagiButton" onclick="resetForm()" style="margin-top: 20px;">Kembali</button>
+        </div>
+    </div>
+    <div class="link-ss" style="user-select: none;">
+        <p id="link_ss">Bagikan ke teman mu dengan, 
+            <a onclick="takeScreenshot()">'klik di sini'</a> untuk Screenshot</p>
+    </div>
+    <div class="footer" style="user-select: none;">
+        <i>Copyright ©.2024 | <a href="https://www.tiktok.com/@sillvia_noviana27?_t=8mtXAMXujv0&_r=1" 
+        target="_blank">Via`Novi~ studio</a></i>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</body>
+</html>
